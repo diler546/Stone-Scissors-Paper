@@ -61,10 +61,15 @@ class MainActivity : AppCompatActivity() {
             btnRock.isEnabled = true
             btnScissors.isEnabled = true
             btnPaper.setBackgroundColor(com.google.android.material.R.color.m3_highlighted_text)
+            btnPaper.setTextColor(Color.WHITE)
             btnSpok.setBackgroundColor(com.google.android.material.R.color.m3_highlighted_text)
+            btnSpok.setTextColor(Color.WHITE)
             btnLizard.setBackgroundColor(com.google.android.material.R.color.m3_highlighted_text)
+            btnLizard.setTextColor(Color.WHITE)
             btnRock.setBackgroundColor(com.google.android.material.R.color.m3_highlighted_text)
+            btnRock.setTextColor(Color.WHITE)
             btnScissors.setBackgroundColor(com.google.android.material.R.color.m3_highlighted_text)
+            btnScissors.setTextColor(Color.WHITE)
         }
 
         btnPaper.isEnabled = false
@@ -76,9 +81,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun start(btn : Button) {
         computerChoose = getComputerChosen()
+        computerChoose.setTextColor(Color.BLACK)
         computerChoose.setBackgroundColor(android.graphics.Color.RED)
 
         yourChoose = btn
+        yourChoose.setTextColor(Color.BLACK)
         yourChoose.setBackgroundColor(android.graphics.Color.GREEN)
 
         checkResult()
